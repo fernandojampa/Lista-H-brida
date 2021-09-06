@@ -2,12 +2,12 @@
  Projeto de lista encadeada com lista sequencial em Python.
  Fundamentação
 
-No decorrer do semestre, foi apresentado o conceito de Lista, suas propriedades de funcionamento e técnicas de implementação: sequencial e encadeada. Neste projeto, implementaremos uma Lista Híbrida, que incorpora o conceito de implementação de lista sequencial e encadeada. A Figura 1 ilustra a abstração da Lista Híbrida: 
+Neste projeto, implementaremos uma Lista Híbrida, que incorpora o conceito de implementação de lista sequencial e encadeada. 
 
 
-Figura 1. TAD da Lista Híbrida
 
-No cenário apresentado na Figura 1, os elementos da lista são armazenados em um array, logo, poderão ser percorridos de forma indexada. O conteúdo armazenado em cada índice do array é um objeto do tipo Node, constituído por suas propriedades carga e prox, este último um número inteiro que indica o índice em que se encontra o próximo elemento da lista. Entretanto cada novo elemento instanciado tem a propriedade prox igual a -1, em que -1 é uma convenção para o finalizador da lista (o nó com esse valor é o último).
+
+Os elementos da lista são armazenados em um array, logo, poderão ser percorridos de forma indexada. O conteúdo armazenado em cada índice do array é um objeto do tipo Node, constituído por suas propriedades carga e prox, este último um número inteiro que indica o índice em que se encontra o próximo elemento da lista. Entretanto cada novo elemento instanciado tem a propriedade prox igual a -1, em que -1 é uma convenção para o finalizador da lista (o nó com esse valor é o último).
 
 class Node:
    def __init__(self, dado):
@@ -32,11 +32,11 @@ class Lista:
    def trocar_ordem(self, posicao_elem_1, posicao_elem_2):
    def __str__(self):
 
-Uma vez adicionados os nós à lista, é importante salientar que o percurso não acontece seguindo a ordem natural dos links. Tomando como exemplo a ilustração da Figura 1, caso fosse seguido esse raciocínio, teríamos a seguinte impressão na tela:
+Uma vez adicionados os nós à lista, é importante salientar que o percurso não acontece seguindo a ordem natural dos links. Caso fosse seguido esse raciocínio, teríamos a seguinte impressão na tela:
 
-         (0)         (1)        (2)        (3)
+   (0)         (1)        (2)        (3)
 [10 | -1]   [20 | 0]   [30 | 1]   [40 | 2] 
-                                   head
+                                    head
 
 Porém, a ordem apresentada não representa a ordem correta dos elementos, pois deve ser iniciado pelo índice indicado pelo head. Desta forma, teríamos o percurso da seguinte maneira:
 
