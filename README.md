@@ -1,6 +1,10 @@
 # Lista-Hibrida
- Projeto de lista encadeada com lista sequencial em Python.
- Fundamentação
+
+![gif](https://user-images.githubusercontent.com/37851455/132266867-bca823cf-9f95-4d53-8102-ffd882a2c96a.gif)
+
+Projeto de lista encadeada com lista sequencial em Python.
+ 
+Fundamentação
 
 Neste projeto, implementaremos uma Lista Híbrida, que incorpora o conceito de implementação de lista sequencial e encadeada. 
 
